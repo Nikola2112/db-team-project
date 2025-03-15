@@ -71,7 +71,9 @@ module.exports = {
 
 
     nav: [
-      { text: 'Початок', link: '/' },
+      { text: '🏠 Початок', link: '/' },
+      { text: '📄 Документація', link: '/intro/' },
+      { text: '📌 Telegram', link: 'https://t.me/pliffdaxq' },
     ],
 
     lastUpdated: 'Останнє оновлення', // string | boolean
@@ -79,7 +81,7 @@ module.exports = {
     repo: 'https://github.com/edu-db/edu_db_labs',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
-    repoLabel: 'Github',
+    repoLabel: '📌 Github',
 
     // Optional options for generating "Edit this page" link
 
@@ -95,7 +97,7 @@ module.exports = {
     // editLinkText: 'Ви можете покращити цю сторінку'
 
   },
-  title: 'Назва проєкту',
+  title: 'Система управління проектами "TaskMaster"',
   description: 'Лабораторні роботи з дисципліни "Організація баз даних"',
   configureWebpack: {
     resolve: {
