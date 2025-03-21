@@ -26,6 +26,7 @@ module.exports = {
   ],
   themeConfig: {
     // logo: './myAvatar.png',
+    smoothScroll: true,
     sidebar: [
     {
       title: 'Вступ',
@@ -76,15 +77,13 @@ module.exports = {
       { text: '📌 Telegram', link: 'https://t.me/pliffdaxq' },
     ],
 
-    lastUpdated: 'Останнє оновлення', // string | boolean
+    lastUpdated: false, // string | boolean
       // Assumes GitHub. Can also be a full GitLab url.
     repo: 'https://github.com/edu-db/edu_db_labs',
     // Customising the header label
     // Defaults to "GitHub"/"GitLab"/"Bitbucket" depending on `themeConfig.repo`
     repoLabel: '📌 Github',
-
     // Optional options for generating "Edit this page" link
-
     // if your docs are in a different repo from your main project:
     // docsRepo: 'boldak/dis-edu',
     // if your docs are not at the root of the repo:
