@@ -9,7 +9,7 @@ footer: "ECL 2.0 Licensed | Copyright © [YYYY] [Your Name]"
 
 ## ✍️ Автори
 
-_студент 2-го курсу, групи ІО-з31_ **Ніколай ВИНОГРАДОВ** [Telegram]([@](https://t.me/vynohradov_n)
+_студент 2-го курсу, групи ІО-з31_ **Ніколай ВИНОГРАДОВ** [Telegram](https://t.me/vynohradov_n)
 
 _студентка 2-го курсу, групи ІО-з31_ **Юлія КУЗЬМЕНКО** [Telegram](https://t.me/julii_kuz)
 
