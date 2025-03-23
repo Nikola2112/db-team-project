@@ -7,14 +7,20 @@
   "author": "Andrey Boldak <boldak.andrey@gmail.com>",
   "license": "ECL 2.0",
   "scripts": {
-    "docs:dev": "npx vuepress dev docs",
-    "docs:build": "npx vuepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "publish": "publish.sh"
   },
   "dependencies": {
-    "@vuepress/plugin-back-to-top": "^1.7.1",
-    "@vuepress/plugin-pwa": "^1.7.1",
-    "vuepress": "^1.7.1",
-    "vuepress-theme-cool": "^1.3.1"
+    "markdown-it-admonition": "^1.0.4",
+    "markdown-it-katex": "^2.0.3",
+    "markdown-it-plantuml": "^1.4.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "vite-plugin-pwa": "^0.21.2",
+    "vitepress": "^1.6.3"
   }
 }
