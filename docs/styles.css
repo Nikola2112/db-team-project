@@ -1,4 +1,4 @@
-/* Весь стиль из предыдущего файла с некоторыми добавлениями для структуры */
+/*/* styles.css */
 @font-face {
 	font-family: 'Inter';
 	src: url('fonts/inter.woff2') format('woff2');
@@ -14,78 +14,51 @@ body {
 	padding: 0;
 }
 
-/* Контейнер для всей страницы */
-.wrapper {
-	display: flex;
-}
-
-/* Sidebar */
-.navbar {
-	position: fixed;
-	width: 300px;
-	background: #DCDCDC;
-	height: 100vh;
-	overflow-y: auto;
-	padding-top: 20px;
-}
-
-.navbar ul {
-	list-style: none;
-	padding: 0;
-}
-
-.navbar ul li {
-	margin: 15px 0;
-}
-
-.navbar ul li a {
-	color: #751aff;
-	text-decoration: none;
-	font-size: 18px;
-}
-
-.navbar ul li a:hover {
-	background-color: #eaeaea;
-	padding: 5px;
-	border-radius: 5px;
-}
-
-/* Main content */
-.maintext {
-	margin-left: 320px;
+.container {
+	max-width: 1200px;
+	margin: auto;
 	padding: 20px;
-	background-color: #ffffff;
 }
 
-section h2 {
-	color: #751aff;
-	font-size: 24px;
+header {
+	background: #fff;
+	padding: 10px 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-section p {
-	font-size: 18px;
+input {
+	padding: 5px;
 }
 
-button {
+.button {
+	top:50%;
+	background-color: #fff;
+	border:none;
+	min-height:30px;
+	min-width: 100px;
+}
+
+.btn {
+	top:50%;
 	background-color: #751aff;
-	color: white;
+	color: #fff;
+	border:none;
+	border-radius:30px;
+	min-height:30px;
+	min-width: 120px;
+}
+#theme-toggle {
+	background: none;
 	border: none;
-	padding: 10px 20px;
+	font-size: 20px;
 	cursor: pointer;
-	font-size: 16px;
-	border-radius: 5px;
+	border-left: 1px solid gray;
+	padding-left: 10px;
 }
 
-button:hover {
-	background-color: #9a67ea;
-}
-
-.subsections {
-	margin-left: 20px;
-	display: none;
-}
-
-/* Для темного режима */
 .dark-theme {
 	background: #121212;
 	color: white;
@@ -95,14 +68,46 @@ button:hover {
 	background: #333;
 }
 
-.dark-theme .navbar {
-	background: #333;
-}
-
-.dark-theme button {
+.dark-theme .button {
 	background: #bb86fc;
 }
 
-.dark-theme button:hover {
+.dark-theme .button:hover {
 	background: #9a67ea;
+}
+
+.navbar {
+	position: fixed;
+	padding-top: 53px;
+	top: 53px;
+	left: 0;
+	width: 300px;
+	border: 0;
+	outline: 0;
+	background: #DCDCDC;
+	height: calc(100vh - 53px);
+	overflow-y: auto;
+}
+.navbar ul li{
+	margin: .5rem;
+	padding: 0;
+	list-style: none;
+	align-content: center;
+	padding: 10px;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	display: block;
+}
+
+.maintext{
+	position: relative;
+	top: 60px;
+	left: 350px;
+	width: 60%;
+	height: auto;
+	background: none;
+	overflow-y: auto;
+	padding-bottom: 50px;
 }
