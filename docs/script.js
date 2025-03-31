@@ -1,12 +1,12 @@
-// 🌙 Перемикач теми
+// Переключатель темы
 document.getElementById('theme-toggle').addEventListener('click', function() {
     document.body.classList.toggle('dark-theme');
 });
 
-// 🔍 Пошук (простий варіант)
+// Поиск по контенту
 document.getElementById('search').addEventListener('input', function() {
     let searchText = this.value.toLowerCase();
-    let elements = document.querySelectorAll('.container h1, .container h3, .btn');
+    let elements = document.querySelectorAll('.maintext h2, .maintext p, .maintext button');
 
     elements.forEach(el => {
         if (el.textContent.toLowerCase().includes(searchText)) {
@@ -16,3 +16,9 @@ document.getElementById('search').addEventListener('input', function() {
         }
     });
 });
+
+// Функция для скрытия и показа подробностей
+function toggleSection(sectionId) {
+    var section = document.getElementById(sectionId);
+    section.style.display = section.style.display === "block" ? "none" : "block";
+}
