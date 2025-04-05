@@ -6,32 +6,113 @@
     <title>Документація - WorkOrbita</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        .button-container {
-            text-align: center;
-            margin-top: 40px;
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        .button-container a {
-            margin: 0 15px;
+
+        .container {
+            display: flex;
         }
+
+        /* Sidebar - фиксированный */
+        .navbar {
+            position: fixed; /* Фиксируем сайдбар */
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100vh; /* Высота 100% экрана */
+            background: #DCDCDC;
+            padding-top: 53px;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 10px 0;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .navbar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Основной контент */
+        .maintext {
+            margin-left: 270px; /* Оставляем место для сайдбара */
+            padding: 20px;
+            width: calc(100% - 270px);
+        }
+
+        header {
+            background: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        input {
+            padding: 5px;
+        }
+
         .button {
+            top:50%;
+            background-color: #fff;
+            border:none;
+            min-height:30px;
+            min-width: 100px;
+        }
+
+        .btn {
+            top:50%;
             background-color: #751aff;
-            color: white;
-            border: none;
-            padding: 15px 25px;
-            font-size: 16px;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            color: #fff;
+            border:none;
+            border-radius:30px;
+            min-height:30px;
+            min-width: 120px;
         }
-        .button:hover {
-            background-color: #9a67ea;
+
+        /* Фиксированный сайдбар */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh; /* Высота на весь экран */
+            background-color: #f4f4f4;
+            padding: 20px;
+            width: 250px;
+            border-right: 1px solid #ddd;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
         }
-        .button:active {
-            background-color: #6b4fbd;
+
+        /* Контент с отступом для сайдбара */
+        .maintext {
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px);
         }
+
     </style>
 </head>
 <body>
+
 <header>
     <a href="index.html"><button type="button" class="button">WorkOrbita</button></a>
     <input type="text" id="search" placeholder="Пошук...">
@@ -45,7 +126,6 @@
 <div class="container">
     <!-- Sidebar -->
     <div class="navbar">
-        <h3>Документація</h3>
         <ul>
             <li><a href="#introduction">Вступ</a></li>
             <li><a href="#definitions">Основні визначення</a></li>
@@ -81,12 +161,12 @@
         <h2 id="approaches">💡 Підходи та способи вирішення завдання</h2>
         <p>Розробка програмного забезпечення проходить через кілька етапів, включаючи аналіз вимог, проектування, розробку, документування, тестування та впровадження.</p>
         <ol>
-            <li><strong>Аналіз вимог:</strong> визначення потреб замовника та формування вимог до майбутньої системи.</li>
+            <li><strong>Аналіз вимог:</strong> на цьому етапі визначаються потреби замовника та формуються вимоги до майбутньої системи.</li>
             <li><strong>Проєктування:</strong> створення архітектури, прототипів і планування завдань.</li>
-            <li><strong>Розробка:</strong> програмування, інтеграція компонентів та розробка дизайну.</li>
-            <li><strong>Документування:</strong> створення технічної документації та інструкцій для користувачів.</li>
-            <li><strong>Тестування:</strong> перевірка працездатності та надійності продукту.</li>
-            <li><strong>Впровадження та підтримка:</strong> запуск продукту і надання технічної підтримки.</li>
+            <li><strong>Розробка:</strong> програмування, інтеграція компонентів і розробка дизайну.</li>
+            <li><strong>Документування:</strong> створення технічної документації для розробників.</li>
+            <li><strong>Тестування:</strong> перевірка функціональності та надійності продукту.</li>
+            <li><strong>Впровадження та підтримка:</strong> запуск продукту та забезпечення його подальшої роботи.</li>
         </ol>
 
         <h2 id="methodologies">🚰 Методології</h2>
