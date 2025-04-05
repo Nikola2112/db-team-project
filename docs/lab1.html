@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Документація - WorkOrbita</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .button-container a {
+            margin: 0 15px;
+        }
+        .button {
+            background-color: #751aff;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #9a67ea;
+        }
+        .button:active {
+            background-color: #6b4fbd;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -20,6 +45,7 @@
 <div class="container">
     <!-- Sidebar -->
     <div class="navbar">
+        <h3>Документація</h3>
         <ul>
             <li><a href="#introduction">Вступ</a></li>
             <li><a href="#definitions">Основні визначення</a></li>
@@ -48,7 +74,7 @@
             <li><strong>Scrum:</strong> методика в межах Agile, що фокусується на покращенні ефективності роботи через короткі цикли (спринти).</li>
             <li><strong>Spiral Model:</strong> ризик-орієнтована модель розробки, що поєднує елементи водоспадної та інкрементної моделей з аналізом ризиків на кожному етапі.</li>
             <li><strong>Incremental Model:</strong> модель розробки, в якій проект розбивається на етапи, що додають нову функціональність до продукту.</li>
-            <li><strong>Kanban:</strong> метод для вдосконалення поточних процесів через мале покрокове вдосконалення.</li>
+            <li><strong>Kanban:</strong> метод для вдосконалення поточних процесів через невеликі зміни. Kanban використовує візуальні інструменти для управління процесами.</li>
             <li><strong>Kanban-board:</strong> інструмент для візуалізації завдань і управління проектами.</li>
         </ul>
 
@@ -121,7 +147,9 @@
             <li><a href="#">Kanban</a></li>
             <li><a href="#">Kanban-board</a></li>
         </ul>
-        <div style="text-align: center; margin-top: 20px;">
+
+        <!-- Navigation buttons -->
+        <div class="button-container">
             <a href="previous.html"><button type="button" class="button">Попередня сторінка</button></a>
             <a href="index.html"><button type="button" class="button">На головну</button></a>
             <a href="next.html"><button type="button" class="button">Наступна сторінка</button></a>
