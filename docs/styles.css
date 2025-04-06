@@ -104,7 +104,7 @@ input {
     position: relative;
     top: 60px;
     left: 350px;
-    width: 60%;
+    width: 50%;
     height: auto;
     background: none;
     overflow-y: auto;
@@ -116,7 +116,7 @@ input {
     padding-top: 53px;
     top: 53px;
     right: 0;
-    width: 300px;
+    width: 250px;
     border: 0;
     outline: 0;
     height: calc(100vh - 53px);
