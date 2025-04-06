@@ -84,7 +84,7 @@ input {
     width: 300px;
     border: 0;
     outline: 0;
-    background: #DCDCDC;
+    background: none;
     height: calc(100vh - 53px);
     overflow-y: auto;
 }
