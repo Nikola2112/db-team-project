@@ -84,7 +84,6 @@ input {
     width: 300px;
     border: 0;
     outline: 0;
-    background: none;
     height: calc(100vh - 53px);
     overflow-y: auto;
 }
@@ -120,7 +119,6 @@ input {
     width: 300px;
     border: 0;
     outline: 0;
-    background: none;
     height: calc(100vh - 53px);
     overflow-y: auto;
 }
