@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intro</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .button-container a {
+            margin: 0 15px;
+        }
+        .button {
+            background-color: #751aff;
+            color: white;
+            border: none;
+            font-size: 14px; /* Уменьшаем размер шрифта */
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #9a67ea;
+        }
+
+        .button:active {
+            background-color: #6b4fbd;
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -57,6 +83,11 @@
     <p>📊 Очікувані техніко-економічні характеристики системи:
         Результатом стане високоякісний програмний продукт, що забезпечить стабільність роботи, надійний захист даних та зручність використання.
         Система передбачає регулярні оновлення, впровадження нових функцій та адаптацію до потреб користувачів.</p>
+    <!-- Navigation buttons -->
+        <div class="button-container">
+            <a href="index.html"><button type="button" class="button">На головну</button></a>
+            <a href="requirements.html"><button type="button" class="button">Наступна сторінка</button></a>
+        </div>
 </div>
     
 <script src="script.js"></script>
