@@ -30,6 +30,36 @@
         .button:active {
             background-color: #6b4fbd;
         }
+
+        /* Стиль для выпадающего списка */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -47,11 +77,13 @@
     <ul>
         <h3>📑Зміст:</h3>
         <li><a href="intro.html">Вступ</a></li>
-        <li><a href="requirements.html">Розроблення загальних вимог до системи</a></li>
-            <ul>
+        <li class="dropdown">
+            <a href="requirements.html">Розроблення загальних вимог до системи</a>
+            <div class="dropdown-content">
                 <a href="lab1.html">Аналіз предметної області</a>
                 <a href="lab1b.html">Потреби зацікавлених сторін</a>
-            </ul>
+            </div>
+        </li>
         <li><a href="lab2.html">Розроблення вимог до функціональності системи</a></li>
         <li><a href="">Проектування інформаційного забезпечення</a></li>
         <li><a href="">Реалізація інформаційного та програмного забезпечення</a></li>
@@ -84,12 +116,12 @@
         Результатом стане високоякісний програмний продукт, що забезпечить стабільність роботи, надійний захист даних та зручність використання.
         Система передбачає регулярні оновлення, впровадження нових функцій та адаптацію до потреб користувачів.</p>
     <!-- Navigation buttons -->
-        <div class="button-container">
-            <a href="index.html"><button type="button" class="button">На головну</button></a>
-            <a href="requirements.html"><button type="button" class="button">Наступна сторінка</button></a>
-        </div>
+    <div class="button-container">
+        <a href="index.html"><button type="button" class="button">На головну</button></a>
+        <a href="requirements.html"><button type="button" class="button">Наступна сторінка</button></a>
+    </div>
 </div>
-    
+
 <script src="script.js"></script>
 </body>
 </html>
