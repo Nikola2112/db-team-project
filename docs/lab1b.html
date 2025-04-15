@@ -158,18 +158,20 @@
             </tr>
             <tr>
                 <td>ОСНОВНИЙ СЦЕНАРІЙ</td>
-                <td></td>
+                <td><p>1. Введення користувачем ім'я користувача та паролю.</p>
+                    <p>2. Перевірка введених даних системою ( InvalidUsernameException або InvalidPasswordException).</p>
+                    <p>3. Перевірка статусу користувача системою (UserBannedException).</p>
+                    <p>4. Вхід користувача у систему.</p></td>
             </tr>
             <tr>
                 <td>РЕЗУЛЬТАТ</td>
-                <td>1. Користувач вводить ім'я користувача і пароль.
-                    2. Система перевіряє введені дані (InvalidPasswordException або InvalidUsernameException).
-                    3. Система перевіряє статус користувача (UserBannedException).
-                    4. Користувач успішно входить у систему.</td>
+                <td>Авторизація користувача системою</td>
             </tr>
             <tr>
                 <td>ВИКЛЮЧНІ СИТУАЦІЇ</td>
-                <td></td>
+                <td><p>- Введення неправильного паролю користувачем (InvalidPasswordException)</p>
+<p>- Введення неправильного ім'я користувача користувачем (InvalidUsernameException)</p>
+<p>- Заблокування системою користувача (UserBannedException)</p></td>
             </tr>
             </tbody>
         </table>
