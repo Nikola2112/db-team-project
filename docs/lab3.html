@@ -82,28 +82,115 @@
         <h2>👩🏻‍💻👨🏻‍💻Користувач</h2>
         <img src = "user.jpg" height = "100%" width = "100%">
         
-        <h2></h2>
-        <img src = ".jpg">
+        <h2>📃Сценарії використання</h2>
+        <hr>
+        <!------CreateUser--------->
+        <img src = "createUser.jpg" height = "100%" width = "100%">
+        <table border="1">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>CreateUser</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>НАЗВА</td>
+                <td>Створення користувача</td>
+            </tr>
+            <tr>
+                <td>УЧАСНИКИ</td>
+                <td>Система, користувач</td>
+            </tr>
+            <tr>
+                <td>ПЕРЕДУМОВИ</td>
+                <td>Користувач не зареєстрований системою</td>
+            </tr>
+            <tr>
+                <td>ОСНОВНИЙ СЦЕНАРІЙ</td>
+                <td>
+                    <p>1. Користувач натискає кнопку "Зареєструватись".</p>
+                    <p>2. Заповнення полей реєстрації користувачем (ім'я користувача, пароль, пошта).</p>
+                    <p>3. Користувач натискає на кнопку "Створити".</p>
+                    <p>4. Перевірка системою введених полей на валідність.</p>
+                    <p>5. Створення системою облікового запису користувача.</p>
+                    <p>6. Автоматичний вхід у систему користувача.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>РЕЗУЛЬТАТ</td>
+                <td>Створення облікового запису користувача</td>
+            </tr>
+            <tr>
+                <td>ВИКЛЮЧНІ СИТУАЦІЇ</td>
+                <td>
+                    <p>- Користувач не ввів ім'я користувача (NullUsernameException)</p>
+                    <p>- Користувач не ввів пароль (NullPasswordException)</p>
+                    <p>- Користувач не ввів пошту (NullEmailException)</p>
+                    <p>- Користувач з таким ім'ям вже існує (UserAlreadyExistsException)</p>
+                    <p>- Користувач ввів недостатньо сильний пароль (WeakPasswordException)</p>
+                    <p>- Користувач вказав неправильний формат пошти (WrongEmailFormatException)</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        
+        <!--AuthoriseUser--->
+        <img src = "authorisation.jpg" height = "100%" width = 100%>
+        <table border="1">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>UserAuthorization</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>НАЗВА</td>
+                <td>Авторизація користувача</td>
+            </tr>
+            <tr>
+                <td>УЧАСНИКИ</td>
+                <td>Система, користувач</td>
+            </tr>
+            <tr>
+                <td>ПЕРЕДУМОВИ</td>
+                <td>Реєстрування користувача системою</td>
+            </tr>
+            <tr>
+                <td>ОСНОВНИЙ СЦЕНАРІЙ</td>
+                <td><p>1. Введення користувачем ім'я користувача та паролю.</p>
+                    <p>2. Перевірка введених даних системою ( InvalidUsernameException або InvalidPasswordException).</p>
+                    <p>3. Перевірка статусу користувача системою (UserBannedException).</p>
+                    <p>4. Вхід користувача у систему.</p></td>
+            </tr>
+            <tr>
+                <td>РЕЗУЛЬТАТ</td>
+                <td>Авторизація користувача системою</td>
+            </tr>
+            <tr>
+                <td>ВИКЛЮЧНІ СИТУАЦІЇ</td>
+                <td><p>- Введення неправильного паролю користувачем (InvalidPasswordException)</p>
+<p>- Введення неправильного ім'я користувача користувачем (InvalidUsernameException)</p>
+<p>- Заблокування системою користувача (UserBannedException)</p></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--------Edituser---------->
+        <img src = "editUser.jpg" height = "100%" width = 100%>
 
         
         <h2></h2>
-        <img src = ".jpg">
+        <img src = ".jpg" height = "100%" width = 100%>
 
         
         <h2></h2>
-        <img src = ".jpg">
+        <img src = ".jpg" height = "100%" width = 100%>
 
         
         <h2></h2>
-        <img src = ".jpg">
-
-        
-        <h2></h2>
-        <img src = ".jpg">
-
-        
-        <h2></h2>
-        <img src = ".jpg">
+        <img src = ".jpg" height = "100%" width = 100%>
 
         
         <!-- Navigation buttons -->
