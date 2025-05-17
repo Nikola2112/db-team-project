@@ -1,4 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розроблення вимог до функціональності системи - WorkOrbita</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .button-container a {
+            margin: 0 15px;
+        }
+        .button {
+            background-color: #751aff;
+            color: white;
+            border: none;
+            font-size: 14px; /* Уменьшаем размер шрифта */
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
+        .button:hover {
+            background-color: #9a67ea;
+        }
+
+        .button:active {
+            background-color: #6b4fbd;
+        }
+        .lab3box{
+             max-width: 1200px;
+             margin: auto;
+             padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="index.html"><button type="button" class="button">WorkOrbita</button></a>
+    <input type="text" id="search" placeholder="Пошук...">
+    <nav>
+        <a href="index.html"><button type="button" class="button">🏠 Початок</button></a>
+        <a href="intro.html"><button type="button" class="button">📄 Документація</button></a>
+        <a href = "https://github.com/Nikola2112/db-team-project"><button type="button" class="button">📌 GitHub</button></a>
+        <button type="button" id="theme-toggle" class="button">🌑</button>
+    </nav>
+</header>
+<nav class = "navbar">
+    <ul>
         <h3>📑Зміст:</h3>
         <li><a href="intro.html">Вступ</a></li>
         <li><a href="requirements.html">Розроблення загальних вимог до системи</a></li>
