@@ -1,8 +1,8 @@
-package com.example.duallo.service;
+package com.example.software.service;
 
 import dto.RoleDTO;
-import com.example.duallo.entity.Role;
-import com.example.duallo.repository.RoleRepository;
+import ccom.example.software.entity.Role;
+import com.example.software.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

@@ -1,4 +1,4 @@
-package com.example.duallo.controller;
+package com.example.software.controller;
 
 import com.example.duallo.entity.Role;
 import com.example.duallo.service.RoleService;

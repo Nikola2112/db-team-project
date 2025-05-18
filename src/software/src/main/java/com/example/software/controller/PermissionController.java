@@ -1,9 +1,9 @@
-package com.example.duallo.controller;
+package com.example.software.controller;
 
 import dto.ErrorResponse;
 import dto.PermissionDTO;
-import com.example.duallo.service.PermissionService;
-import com.example.duallo.entity.Permission;
+import com.example.software.service.PermissionService;
+import com.example.software.entity.Permission;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

@@ -1,13 +1,13 @@
-package com.example.duallo;
+package com.example.software.;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringDualloApplication {
+public class SpringSoftwareApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringDualloApplication.class, args);
+		SpringApplication.run(SpringSoftwareApplication.class, args);
 	}
 
 }

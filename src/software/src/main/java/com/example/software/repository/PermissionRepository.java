@@ -1,6 +1,6 @@
-package com.example.duallo.repository;
+package com.example.software.repository;
 
-import com.example.duallo.entity.Permission;
+import com.example.software.entity.Permission;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.Optional;

@@ -1,9 +1,9 @@
-package com.example.duallo.controller;
+package com.example.software.controller;
 
 import dto.ErrorResponse;
 import dto.GrantDTO;
-import com.example.duallo.entity.Grant;
-import com.example.duallo.service.GrantService;
+import com.example.software.entity.Grant;
+import com.example.software.service.GrantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

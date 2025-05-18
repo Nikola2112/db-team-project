@@ -1,8 +1,8 @@
-package com.example.duallo.service;
+package com.example.software.service;
 
 import dto.PermissionDTO;
-import com.example.duallo.entity.Permission;
-import com.example.duallo.repository.PermissionRepository;
+import com.example.software.entity.Permission;
+import com.example.software.repository.PermissionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.transaction.Transactional;

@@ -1,4 +1,4 @@
-package com.example.duallo.entity;
+package com.example.software.entity;
 
 import lombok.*;
 

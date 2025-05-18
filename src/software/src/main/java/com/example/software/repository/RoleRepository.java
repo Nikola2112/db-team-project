@@ -1,4 +1,4 @@
-package com.example.duallo.repository;
+package com.example.software.repository;
 
 import com.example.duallo.entity.Role;
 import org.springframework.data.repository.CrudRepository;

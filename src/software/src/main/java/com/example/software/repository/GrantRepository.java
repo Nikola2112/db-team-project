@@ -1,6 +1,6 @@
-package com.example.duallo.repository;
+package com.example.software.repository;
 
-import com.example.duallo.entity.Grant;
+import com.example.software.entity.Grant;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
